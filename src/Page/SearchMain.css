@@ -1,0 +1,145 @@
+.searchPageHeader {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  align-items: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.searchPage__logo {
+  object-fit: contain;
+  height: 200px;
+  margin-right: 50px;
+}
+.searchPage__headerBody > .search > .search-input {
+  margin: 0;
+  width: unset;
+  margin: unset;
+  max-width: unset;
+}
+.searchPage__options {
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+.searchPage__optionsLeft,
+.searcgPage__optionsRight {
+  display: flex;
+}
+.searchPage__options a,
+.searcgPage__optionsRight a {
+  text-decoration: none;
+  color: gray;
+}
+.searcgPage__optionsRight,
+.searchPage__optionsLeft {
+  display: flex;
+}
+.searcgPage__optionsRight {
+  margin-left: 250px;
+}
+.searchPage__option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.searchPage__option a {
+  margin-left: 5px;
+}
+
+.searchPageResults {
+  max-width: 750px;
+  margin-top: 20px;
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
+.searchPage__resultCount {
+  margin-right: 250px;
+  color: #70757a;
+  font-size: 14px;
+}
+.searchPageResult {
+  margin: 40px 0;
+}
+.searchPage__resultTitle {
+  text-decoration: none;
+}
+.searchPage__resultTitle:hover {
+  text-decoration: underline;
+}
+.searchPage__resultTitle > h2 {
+  font-weight: 500;
+}
+.searchPage__resultSnippet {
+  margin-top: 10px;
+  margin-left: 250px;
+}
+.searchPage__resultImage {
+  object-fit: contain;
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+.banner {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .banner {
+    margin-bottom: -10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #70757a;
+    font-size: 14px;
+  }
+  .searchPageHeader {
+    flex-direction: column;
+  }
+  .searchPage__logo {
+    margin-bottom: -50px;
+    object-fit: contain;
+    height: 100px;
+    width: 100%;
+  }
+  .searchPage__optionsLeft,
+  .searcgPage__optionsRight {
+    display: none;
+  }
+  .searchPageResults {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 1px;
+    margin-bottom: 20px;
+  }
+  .searchPage__resultCount {
+    width: 100%;
+    display: flex;
+    color: #70757a;
+    font-size: 14px;
+  }
+  .searchPageResult {
+    margin-bottom: 20px !important;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  }
+  .searchPage__resultImage {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+  }
+  .searchPage__resultLink {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchPage__resultSnippet {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+}
